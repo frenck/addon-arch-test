@@ -1,0 +1,23 @@
+{
+  "name": "AARCH64",
+  "version": "1.6.0",
+  "slug": "aarch64",
+  "description": "AARCH64 only add-on",
+  "url": "https://github.com/hassio-addons/addon-example",
+  "startup": "application",
+  "arch": [
+    "aarch64"
+  ],
+  "boot": "auto",
+  "hassio_api": true,
+  "hassio_role": "default",
+  "options": {
+    "log_level": "info",
+    "seconds_between_quotes": 5
+  },
+  "schema": {
+    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
+    "seconds_between_quotes": "int(1,120)"
+  },
+  "image": "hassioaddons/example-{arch}"
+}
